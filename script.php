@@ -1,6 +1,6 @@
 <?php
 
-$javaClassPath = "/java/Main.java";
+$javaClassPath = "Main.class";
 
 // Command to execute the Java class using 'java'
 $command = "java -cp $javaClassPath MyJavaFile";
