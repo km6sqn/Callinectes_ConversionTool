@@ -1,30 +1,23 @@
 public class Question {
-    private String question;
     private String answer;
     private String part97;
-    private String questionText;
+    private String url;
+    private String question;
     private String a;
     private String b;
     private String c;
     private String d;
 
-    public Question(String question, String answer, String part97, String questionText, String a, String b, String c, String d){
-        this.question = question;
+    public Question(String answer, String part97, String question, String a, String b, String c, String d) {
+
         this.answer = answer;
         this.part97 = part97;
-        this.questionText = questionText;
+        this.question = question;
         this.a = a;
         this.b = b;
         this.c = c;
         this.d = d;
-    }
-
-    public String getQuestion() {
-        return question;
-    }
-
-    public void setQuestion(String question) {
-        this.question = question;
+        this.url = "Test";
     }
 
     public String getAnswer() {
@@ -43,12 +36,20 @@ public class Question {
         this.part97 = part97;
     }
 
-    public String getQuestionText() {
-        return questionText;
+    public String getUrl() {
+        return url;
     }
 
-    public void setQuestionText(String questionText) {
-        this.questionText = questionText;
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
     }
 
     public String getA() {

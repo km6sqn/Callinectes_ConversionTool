@@ -1,16 +1,17 @@
 <?php
 
 $javaClassPath = "Main.class";
-
-// Command to execute the Java class using 'java'
-$command = "java -cp $javaClassPath MyJavaFile";
+$targetDownload = "download.html";
+$command = "java -cp /var/www/html/km6sqn/java/out/production/java/ Main";
 
 // Execute the Java command and capture the output
 exec($command, $output, $returnCode);
 
 // Check the return code to see if the command executed successfully
 if ($returnCode === 0) {
-    echo "Java file executed successfully!";
+     echo "File Uploaded.  Redirecting...";
+          header("Location: $targetDownload");
+          exit();
     // Process $output array if needed
 } else {
     echo "Error executing Java file. Return code: $returnCode";

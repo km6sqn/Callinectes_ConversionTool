@@ -12,7 +12,7 @@
     $fileTmpName  = $_FILES['the_file']['tmp_name'];
     $fileType = $_FILES['the_file']['type'];
     $fileExtension = strtolower(end(explode('.',$fileName)));
-          $targetPage = "conversion.html";
+    $targetPage = "conversion.html";
     $uploadPath = $currentDirectory . $uploadDirectory . basename($fileName); 
 	
    
